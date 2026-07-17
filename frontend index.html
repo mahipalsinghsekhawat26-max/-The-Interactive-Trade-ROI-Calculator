@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market ROI Projector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="dashboard">
+        <header>
+            <h1>Portfolio <span>Projector</span></h1>
+            <p>Analyze simulated 30-day returns based on historical asset volatility.</p>
+        </header>
+
+        <section class="controls-glass">
+            <div class="input-group">
+                <label for="investmentAmount">Initial Amount (₹)</label>
+                <input type="number" id="investmentAmount" placeholder="e.g. 5000">
+            </div>
+
+            <div class="input-group">
+                <label for="assetSelect">Select Asset Profile</label>
+                <select id="assetSelect">
+                    <option value="STABLE_INDEX">Stable Index (Low Risk)</option>
+                    <option value="TECH_GROWTH">Tech Sector (High Volatility)</option>
+                </select>
+            </div>
+
+            <button id="calculateBtn">Project Returns</button>
+        </section>
+
+        <section class="results-container">
+            <div class="metrics">
+                <div class="metric-box">
+                    <h3>Projected Value</h3>
+                    <p id="finalValueDisplay">₹0.00</p>
+                </div>
+                <div class="metric-box">
+                    <h3>Net Profit</h3>
+                    <p id="profitDisplay" class="highlight">₹0.00</p>
+                </div>
+                <div class="metric-box">
+                    <h3>Growth</h3>
+                    <p id="growthDisplay" class="highlight">0.00%</p>
+                </div>
+            </div>
+            
+            <div class="chart-wrapper">
+                <canvas id="roiChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
