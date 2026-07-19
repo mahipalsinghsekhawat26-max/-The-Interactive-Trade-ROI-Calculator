@@ -1,5 +1,5 @@
-if type of window not= undefined;
-const calculateBtn = document.getElementById('calculateBtn');
+if type of window not= undefind;
+ const calculateBtn = document.getElementById('calculateBtn');
  const amountInput = document.getElementById('investmentAmount');
  const assetSelect = document.getElementById('assetSelect');
 
