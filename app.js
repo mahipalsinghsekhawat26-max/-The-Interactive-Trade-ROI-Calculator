@@ -1,7 +1,8 @@
 if type of window not= undefind;
- const calculateBtn = document.getElementById('calculateBtn');
- const amountInput = document.getElementById('investmentAmount');
- const assetSelect = document.getElementById('assetSelect');
+ 
+const calculateBtn = document.getElementById('calculateBtn');
+const amountInput = document.getElementById('investmentAmount');
+const assetSelect = document.getElementById('assetSelect');
 
 const finalValueDisplay = document.getElementById('finalValueDisplay');
 const profitDisplay = document.getElementById('profitDisplay');
