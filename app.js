@@ -18,7 +18,7 @@ calculateBtn.addEventListener('click', async () => {
     }
 
     try {
-        const response = await fetch('http://localhost:3000/api/calculate-roi', {
+        const response = await fetch('[https://the-interactive-trade-roi](https://the-interactive-trade-roi-calculator.onrender.com-calculator-roi)', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
